@@ -1,0 +1,17 @@
+.jumbotron{
+   color:white; 
+   background-color:white;
+    background-image: url("https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.6435-9/120736837_216720819795024_2863164950298583361_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=R5LO5fBTLwMAX9dw5k3&tn=dRYgsslArWZI7-0i&_nc_ht=scontent.ftpe8-4.fna&oh=6e4b6e95f54af554fca9063ff1ccbe3b&oe=619B3F76");
+    /*background-size: cover;*/
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    /*height:50vh;*/
+    
+}
+
+img{
+    vertical-align:auto;
+}
+
+
+

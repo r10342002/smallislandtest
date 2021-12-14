@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/bt.css">
+
+  <title>SmallIsland</title>
+</head>
+
+<body>
+  <div style="height:500vh;">
+    <div class="sticky-top">
+      <video id="video1"
+        src="https://res.cloudinary.com/dvrqzjv98/video/upload/v1639273982/%E5%B0%8F%E7%90%89%E7%90%83%E7%A9%BA%E6%8B%8D1_ndonv7.mov"
+        style="width:100vw"></video>
+    </div>
+
+
+    <script>
+      $(document).ready(function () {
+        var video1 = $("#video1");
+        var video1_pos = video1.offset().top;
+        var video1_end = video1.offset().top + video1.parent().parent().height();
+
+        $(window).scroll(function () {
+          var scrolled = $(window).scrollTop();
+          if (scrolled > video1_pos && scrolled < video1_end && !video1.hasClass("played")) {
+            video1.get(0).play();
+            video1.addClass("played");
+          }
+          if (scrolled == 0 && video1.hasClass("played")) {
+            video1.removeClass("played");
+            video1.on("end", function () {
+              video1.currentTime = 0;
+            });
+          }
+
+        });
+      });
+    </script>
+
+  </div>
+  <div class="jumbotron jumbotron-fluid text-center ">
+    <div
+      style="height:300px;background-image:url(https://res.cloudinary.com/dvrqzjv98/image/upload/v1639277035/%EF%BC%A2%EF%BC%A7_cheokp.png);">
+      <div style="height:70px;"></div>
+      <h6>資料研究／張家瑜、翁靖婷、馬揚異</h6>
+      <h6>攝影／翁靖婷</h6>
+      <h6>影片剪輯／張家瑜</h6>
+      <h6>網頁工程／張家瑜、翁靖婷、馬揚異</h6>
+      <h6>發布時間：2021.1.12</h6>
+      <h6>最後更新時間：2021.1.12</h6>
+      </h6>
+    </div>
+
+    <div>
+      <img src="https://res.cloudinary.com/dvrqzjv98/image/upload/v1639278372/%E7%96%8A%E5%9C%962_n5ceme.png" alt=""
+        width="100%">
+    </div>
+    <img src="https://res.cloudinary.com/dvrqzjv98/image/upload/v1639278366/%E7%96%8A%E5%9C%961_f9vdu2.png" alt=""
+      width="100%">
+  </div>
+
+  <div>
+    <h5 class="container">2020年，鳳凰旅行社公司提出小琉球十層樓飯店建設案，</h5>
+  </div>
+  <h5 class="container">經營理念是吸引高端客進入小琉球觀光，以一晚七千元起跳的房價作為目標。</h5>
+  </div>
+  <h5 class="container">目前建設案已於2021年​11月23日正式動工。</h5>
+  </div>
+  <h5 class="container">此事件可能釀成小琉球旅宿業無上限的開發的源頭。</h5>
+  </div>
+  <div style="height:200px;">
+  </div>
+</body>
+
+
+<script>
+  (function () {
+    var namespace = '__twreporterEmbeddedData';
+    var pkg = 'scrollable-video';
+    if (typeof window != 'undefined') {
+      if (!window.hasOwnProperty(namespace)) {
+        window[namespace] = {};
+      }
+      if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
+        window[namespace][pkg] = [];
+      }
+      if (Array.isArray(window[namespace][pkg])) {
+        var data = {
+          "video": {
+            "sources": [{
+              "type": "video\u002Fmp4",
+              "src": "https:\u002F\u002Fres.cloudinary.com\u002Fdvrqzjv98\u002Fvideo\u002Fupload\u002Fv1639283648\u002Fys8kt-86v20_anzb05.mp4",
+              "width": 1920,
+              "height": 1080
+            }]
+          },
+          "captions": [{
+            "text": "1986年代小琉球因自然環境獨特，成為熱門海島觀光地",
+            "time": 0.5
+          }, {
+            "text": "2000年後併入大鵬灣國家風景區，觀光活動與公共設施開始增加",
+            "time": 3
+          }, {
+            "text": "民宿也逐年攀升",
+            "time": 12
+          }, {
+            "text": "截至2021年有400多家民宿，其中僅有149家合法",
+            "time": 18
+          }],
+          "appProps": {
+            "captionsSetting": {
+              "xBoxAlign": "left",
+              "xPosition": "8.7%",
+              "yBoxAlign": "bottom",
+              "yPosition": "20px"
+            },
+            "captionSetting": {
+              "textAlign": "right"
+            },
+            "secondsPer100vh": 1.5,
+            "skipLoadLocationRegExp": "editor",
+            "forcedPreloadVideo": true,
+            "gsapVersion": "3.5.1",
+            "scrollTriggerVersion": "3.5.1",
+            "pollingTimeout": 700,
+            "preloadCacheType": "force-cache"
+          },
+          "theme": {
+            "mq": {
+              "mobileMaxWidth": "767px"
+            },
+            "captions": {
+              "color": "#fff",
+              "link": {
+                "color": "#a67a44",
+                "underlineColor": "#a67a44"
+              },
+              "lineHieght": "1.7",
+              "mobileLineHeight": "1.7",
+              "fontStyle": "normal",
+              "fontWeight": "bold",
+              "fontSize": "24px",
+              "mobile": {
+                "fontSize": "22px"
+              },
+              "fontFamily": "ff-tisa-web-pro, source-han-sans-traditional, Noto Sans TC, PingFang TC, Apple LiGothic Medium, Roboto, Microsoft JhengHei, Lucida Grande, Lucida Sans Unicode, sans-serif",
+              "box": {
+                "background": "#404040",
+                "width": "450px",
+                "mobileWidth": "77%",
+                "spanPadding": "6px 15px",
+                "mobilePadding": "12px 12px 14px 18px"
+              }
+            }
+          },
+          "uuid": "1a542b9d-6f03-4cef-8290-7d7f5146f573"
+        };
+        window[namespace][pkg].push(data);
+      }
+    }
+  })()
+</script>
+<div id="1a542b9d-6f03-4cef-8290-7d7f5146f573"></div>
+
+<script type="text/javascript" crossorigin
+  src="https://unpkg.com/@twreporter/scrollable-video@1.0.1/dist/main.abb2610d2c16acab4a4c.bundle.js"></script>
+
+<div id="1f245ce1-c415-4938-82f6-c9406d6178d9"></div>
+
+<script type="text/javascript" crossorigin
+  src="https://unpkg.com/@twreporter/scrollable-video@1.0.0-rc.3/dist/main.142ef5f0d6d2dfdb8b8d.bundle.js"></script>
+</div>
+
+<div style="height:100px;">
+<div class="col-12">
+  <div class="container">
+    <div style="height:100px;"></div>
+  </div>
+  <div class="container">
+    <div style="height:50px;"></div>
+    <h5 class="container ">而隨著觀光業的發展，不止民宿、旅館越來越多，</h5>
+    <h5 class="container ">潛店、獨木舟、連鎖超商、連鎖手搖飲、酒吧、健身房也紛紛進駐小琉球。</h5>
+  </div>
+  <div>
+    <div style="height:100px;"></div>
+    <h3 class="container text-left">小琉球民宿GIS圖</h3>
+    <img src="https://res.cloudinary.com/dvrqzjv98/image/upload/v1639481629/%E5%B0%8F%E7%90%89%E7%90%83%E6%B0%91%E5%AE%BF_f9rch8.png" alt=""
+      width="50%">
+  </div>
+  <div>
+    <h3 class="container text-left">小琉球餐飲GIS圖</h3>
+    <img src="https://res.cloudinary.com/dvrqzjv98/image/upload/v1639481629/%E5%B0%8F%E7%90%89%E7%90%83%E9%A4%90%E9%A3%B2_s4gyds.png" alt=""
+      width="50%">
+  </div>
+  <div>
+    <h3 class="container text-left">小琉球濱海遊憩GIS圖</h3>
+    <img src="https://res.cloudinary.com/dvrqzjv98/image/upload/v1639481629/%E6%BD%9B%E5%BA%97_yxep5p.png" alt=""
+      width="50%">
+  </div>
+  <div>
+    <div style="height:200px;"></div>
+    <h3 class="container text-center">旅宿業過多會造成什麼問題？</h3>
+    <img src="" alt=""
+      width="50%">
+    </div>
+    <div>
+      <div style="height:200px;"></div>
+      <h3 class="container text-center">陸域地景被觀光業不斷開發破壞之下，
+        有沒有法規來為小琉球的旅宿興建踩剎車？</h3>
+      <img src="" alt=""
+        width="50%">
+    </div>
+    <div>
+      <div style="height:200px;"></div>
+      <h3 class="container text-center">當地居民看法</h3>
+      <img src="" alt=""
+        width="50%">
+    </div>
+    <div>
+      <div style="height:200px;"></div>
+      <h3 class="container text-center">現行政策與未來施政規劃，如何處理小琉球旅宿業的現有問題？</h3>
+      <img src="" alt=""
+        width="50%">
+    </div>
+    <div>
+      <div style="height:200px;"></div>
+      <h3 class="container text-center">小琉球的陸域景觀需要管理嗎?</h3>
+      <h3 class="container text-center"></h3>
+      <h3 class="container text-center"></h3>
+      <img src="" alt=""
+        width="50%">
+    </div>
+
+  </body>
+
+</html>
